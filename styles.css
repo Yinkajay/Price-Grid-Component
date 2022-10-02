@@ -1,29 +1,69 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --greyish-blue: hsl(218, 22%, 67%);
+    --light-gray: hsl(204, 43%, 93%);
 }
 
-body{
+body {
     position: relative;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto; */
+    font-family: 'Karla', sans-serif;
 }
 
+main{
+    width: 40rem;
+    max-width: 85%;
+}
 
-/* .card{
+.card{
+    /* display: flex; */
+    height: 25rem;
+    background-color: green;
+    border-radius: 10px;
+    /* padding: 2rem; */
+}
+
+.top{
+    height: 50%;
+    color: var(--greyish-blue);
+    border: 1px solid;
+    padding: 2rem;
+}
+
+.bottom{
     display: flex;
-} */
+    align-items: center;
+    height: 50%;
+    border: 1px solid black;
+}
 
+.pricing{
+flex-basis: 50%;
+background-color: violet;
+height: 100%;
+padding: 2rem;
+border: 1px solid black;
+}
+.description{
+flex-basis: 50%;
+background-color: violet;
+height: 100%;
+padding: 2rem;
+border: 1px solid black;
+}
 
+.button{
 
-
-
-
-
+}
 
 
 
@@ -45,10 +85,16 @@ body{
 
 
 /* Footer Styles */
-footer{
+footer {
     position: absolute;
-    /* bottom: 20px; */
-    /* left: ; */
+    bottom: 20px;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
