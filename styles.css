@@ -17,77 +17,123 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Karla', sans-serif;
+    color: white;
+    
 }
 
-main{
+main {
     width: 40rem;
     max-width: 85%;
+    margin: 50px 0;
 }
 
-.card{
-    /* display: flex; */
-    height: 25rem;
-    background-color: green;
+
+/* General Card Styles */
+.card {
+    height: 30rem;
     border-radius: 10px;
-    /* padding: 2rem; */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.289);
 }
 
-.top{
+/* Card Top Styles */
+.top {
     height: 50%;
     color: var(--greyish-blue);
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 2rem;
 }
 
-.bottom{
+h1 {
+    font-weight: 700;
+    color: var(--cyan);
+    padding: 5px 0 10px;
+}
+
+.green-text {
+    color: var(--bright-yellow);
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+.main-paragraph {
+    margin: 30px 0;
+}
+
+/* Card Bottom Styles */
+.bottom {
     display: flex;
     align-items: center;
     height: 50%;
-    border: 1px solid black;
+    color: var(--light-gray);
 }
 
-.pricing{
-flex-basis: 50%;
-background-color: violet;
-height: 100%;
-padding: 2rem;
-border: 1px solid black;
-}
-.description{
-flex-basis: 50%;
-background-color: violet;
-height: 100%;
-padding: 2rem;
-border: 1px solid black;
+.bottom p {
+    font-size: 15px;
 }
 
-.button{
-
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0px 0 15px;
 }
 
+/* Pricing Styles */
+.pricing {
+    flex-basis: 50%;
+    background-color: var(--cyan);
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0 0 0 10px;
+}
 
+.dollar-price {
+    font-size: 30px;
+    font-weight: 700;
+}
 
+.pricing p {
+    margin: 20px 0;
+}
 
+button {
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 8px;
+    font-family: inherit;
+    color: white;
+    border: none;
+    background-color: var(--bright-yellow);
+    width: 100%;
+}
 
+button:focus {
+    outline: none;
+}
 
+button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
 
+/* Description Styles */
+.description {
+    flex-basis: 50%;
+    background-color: hsla(179, 62%, 43%, 0.7);
+    height: 100%;
+    padding: 2rem;
+    border-radius: 0 0 10px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.description p {
+    margin: 10px 0;
+    padding: 0 70px 0 0;
+}
 
 /* Footer Styles */
 footer {
     position: absolute;
     bottom: 20px;
+    color: black;
 }
 
 .attribution {
@@ -97,4 +143,234 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    h2{
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    .pricing {
+        padding: 1.2rem;
+        border-radius: 0 0 0 10px;
+    }
+
+    .dollar-price {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .pricing p {
+        margin: 15px 0;
+    }
+    .description {
+        padding: 1.2rem;
+        border-radius: 0 0 10px 0;
+    }
+    
+    .description p {
+        margin: 10px 0;
+        padding: 0 35px 0 0;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Karla', sans-serif;
+        color: white;
+    }
+
+    p {
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 100px 0;
+    }
+
+    /* General Card Styles */
+    .card {
+        height: 50rem;
+        /* border-radius: 10px; */
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.289);
+    }
+
+    /* Card Top Styles */
+    .top {
+        height: 34%;
+        color: var(--greyish-blue);
+        /* border: 1px solid; */
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--cyan);
+        padding: 5px 0 10px;
+    }
+
+    .green-text {
+        color: var(--bright-yellow);
+        margin: 10px 0;
+        font-weight: 700;
+    }
+
+    .main-paragraph {
+        margin: 20px 0 20px;
+    }
+
+    /* Card Bottom Styles */
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 66%;
+        color: var(--light-gray);
+    }
+
+    .bottom p {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px 0 15px;
+    }
+
+    /* Pricing Styles */
+    .pricing {
+        width: 100%;
+        background-color: var(--cyan);
+        height: 50%;
+        padding: 2rem;
+        border-radius: 0;
+    }
+
+    .pricing p {
+        margin: 20px 0;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 14px;
+        border-radius: 8px;
+        font-family: inherit;
+        color: white;
+        border: none;
+        background-color: var(--bright-yellow);
+        width: 100%;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    button:hover {
+        opacity: 0.85;
+        cursor: pointer;
+    }
+
+    /* Description Styles */
+    .description {
+        width: 100%;
+        background-color: hsla(179, 62%, 43%, 0.7);
+        height: 50%;
+        padding: 2rem;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .description p {
+        margin: 10px 0;
+        padding: 0 80px 0 0;
+    }
+
+    /* Footer Styles */
+    footer {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media (max-width:300px){
+    .top{
+        padding: 1.4rem;
+    }
+    p{
+        font-size: 13px;
+    }
+    .green-text {
+        color: var(--bright-yellow);
+        margin: 10px 0;
+        font-weight: 700;
+    }
+    
+    .main-paragraph {
+        margin: 10px 0;
+    }
+        /* Pricing Styles */
+        .pricing {
+            width: 100%;
+            background-color: var(--cyan);
+            height: 50%;
+            padding: 1.4rem;
+            border-radius: 0;
+        }
+    
+        .pricing p {
+            margin: 10px 0;
+        }
+    
+        button {
+            font-size: 16px;
+            padding: 8px;
+            border-radius: 8px;
+            font-family: inherit;
+            color: white;
+            border: none;
+            background-color: var(--bright-yellow);
+            width: 100%;
+        }
+    
+        button:focus {
+            outline: none;
+        }
+    
+        button:hover {
+            opacity: 0.85;
+            cursor: pointer;
+        }
+    
+        /* Description Styles */
+        .description {
+            width: 100%;
+            background-color: hsla(179, 62%, 43%, 0.7);
+            height: 50%;
+            padding: 1.4rem;
+            border-radius: 0 0 10px 10px;
+        }
+    
+        .description p {
+            margin: 10px 0;
+            padding: 0 40px 0 0;
+        }
 }
